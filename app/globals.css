@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  @apply bg-slate-100 text-slate-900 antialiased;
+}
+
+a {
+  @apply text-primary-600 hover:text-primary-700;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: theme('colors.slate.200');
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: theme('colors.primary.400');
+  border-radius: 999px;
+}
